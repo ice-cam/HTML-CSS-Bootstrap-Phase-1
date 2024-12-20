@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 76px;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img.logo {
+    height: 40px;
+}
+
+.nav-link {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Service Cards */
+.service-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Package Cards */
+.package-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.price {
+    font-size: 1.25rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }}

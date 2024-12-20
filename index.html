@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Wanderlust Travel" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Next Destination</h1>
+            <p>Plan your perfect getaway with us</p>
+            <a href="#packages" class="btn btn-primary btn-lg">Explore Packages</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center">Wanderlust Travel Agency has been helping travelers explore the world since 2010. We specialize in creating unforgettable travel experiences with personalized itineraries and exceptional service.</p>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Flight Booking</h5>
+                            <p class="card-text">Find the best deals on flights worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Booking</h5>
+                            <p class="card-text">Luxury and comfort at competitive prices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Packages</h5>
+                            <p class="card-text">Tailored travel experiences just for you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Travel Packages</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card package-card">
+                        <img src="images/package1.jpg" class="card-img-top" alt="Paris Package">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris Explorer</h5>
+                            <p class="card-text">5 days in the City of Light</p>
+                            <p class="price">From $999</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#packageModal1">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- More package cards... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Wanderlust Travel Agency</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
