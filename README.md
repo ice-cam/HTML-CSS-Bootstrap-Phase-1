@@ -22,9 +22,8 @@ A responsive travel agency website built with HTML, CSS, and Bootstrap.
 
 
 travel-agency-website/
-├── css/
-│   └── styles.css          # Custom styles
-├── images/                 # Image assets
+├─ styles.css          # Custom styles
+├── images                 # Image assets
 ├── index.html             # Main HTML file
 └── README.md              # Documentation
 
